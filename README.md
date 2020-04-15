@@ -12,10 +12,14 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 all three input fields contain strings
 verify only letters/punctuation in input feilds
-verify five syllables in first input field
-verify 7 syllables in second input field
-verify 5 syllables in third input field
-return if haiku meets requirements
+check syllables in an indvidual word.
+split input sentences to extract individual indecies
+check syllables for multiple words.
+verify input 1 is 5 syllables
+verify input 2 is 7 syllables
+verify input 3 is 5 syllables
+if rules are met return true
+display output of true/false statement to user
 
 
 ## Setup/Installation Requirements
