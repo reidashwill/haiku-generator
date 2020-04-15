@@ -8,6 +8,16 @@
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
+## Logistics / Specs
+
+all three input fields contain content
+verify only letters/punctuation in input feilds
+verify five syllables in first input field
+verify 7 syllables in second input field
+verify 5 syllables in third input field
+return if haiku meets requirements
+
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
