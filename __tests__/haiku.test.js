@@ -11,14 +11,18 @@ describe("Haiku", () => {
 
   // test('check for syllables in individual words', () => {
   //   const newHaiku = new Haiku("soothed", "yourselves", "funkingroovin");
-  //   expect(newHaiku.syllableChecker(newHaiku.word)).toEqual(1);
+  //   expect(newHaiku.syllableChecker(newHaiku.line1)).toEqual(1);
   //   expect(newHaiku.syllableChecker(newHaiku.line2)).toEqual(2);
   //   expect(newHaiku.syllableChecker(newHaiku.line3)).toEqual(4);
   // })
 
-  test("should determine if inputs are being changed into arrays" , () => {
-    let haiku2 = new Haiku("this is a string", "this is also a string", "this as well is a string my friends");
-    expect(haiku2.stringBreaker(haiku2.haikuArr)).toEqual(3);
-  
-    } )
-})
+  // test("should determine if inputs are being changed into arrays" , () => {
+  //   let haiku2 = new Haiku("soothed is a string", "yourselves is also a string", "funkingroovin as well is a string my friends");
+  //   expect(haiku2.stringBreaker().length).toEqual(3);
+  //   } )
+
+    test("should return numbers of syllables in each index", () => {
+      let testVar = new Haiku (["test", "number", "funkingroovin"],[""],[""])
+      expect(testVar.testFunction()).toEqual(7);
+    })
+  })
