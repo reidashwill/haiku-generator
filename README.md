@@ -10,7 +10,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Logistics / Specs
 
-all three input fields contain content
+all three input fields contain strings
 verify only letters/punctuation in input feilds
 verify five syllables in first input field
 verify 7 syllables in second input field
