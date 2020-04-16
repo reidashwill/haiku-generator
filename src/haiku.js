@@ -27,14 +27,15 @@ export class Haiku {
 
   syllableChecker(passedWord) {
     let word = passedWord.toLowerCase();
-    // let array = [];
+    let array = [];
     if (word.length <= 3) {
-      return 1;
+      console.log(1); 
     } else {
       word = word.replace(/([^laeiouy]es|ed)$/i, '');
       word = word.replace(/([.!?:;])$/i, '');
       word = word.replace(/^y/i, '');
-      return (word.match(/[aeiouy]{1,2}/gi).length);
+      console.log(word.match(/[aeiouy]{1,2}/gi).length);
+      
       // const reducer = function (accumulator, currentValue) {
       //   accumulator + currentValue;
       // };
@@ -50,7 +51,6 @@ export class Haiku {
     console.log("Solver called line3Array: ", this.line3Array);
     this.line1Array.forEach(myword => {
       this.syllableChecker(myword);
-
     });
     this.line2Array.forEach(myword => {
       this.syllableChecker(myword);
