@@ -15,18 +15,19 @@
         <div class="form-group">
           <h3>Please enter your haiku below to see if it passes the test</h3>
           <br>
-          <label for="inputLine1">Line One:</label>
-          <input type="text" id="inputText" pattern="[a-z' ']+" oninvalid="setCustomValidity('numbers and symbols will not work. Please REFRESH the page and try again.')">
+          <label for="inputLabel">Line 1:</label>
+          <input type="text" id="inputLine1" pattern="[a-z' ']+" oninvalid="setCustomValidity('numbers and symbols will not work. Please REFRESH the page and try again.')">
           <br>
-          <label for="inputLine2">Line Two:</label>
-          <input type="text" id="inputText" pattern="[a-z' ']+" oninvalid="setCustomValidity('numbers and symbols will not work. Please REFRESH the page and try again.')">
+          <label for="inputLabel">Line 2:</label>
+          <input type="text" id="inputLine2" pattern="[a-z' ']+" oninvalid="setCustomValidity('numbers and symbols will not work. Please REFRESH the page and try again.')">
           <br>
-          <label for="inputLine3">Line Three:</label>
-          <input type="text" id="inputText" pattern="[a-z' ']+" oninvalid="setCustomValidity('numbers and symbols will not work. Please REFRESH the page and try again.')">
+          <label for="inputLabel">Line 3:</label>
+          <input type="text" id="inputLine3" pattern="[a-z' ']+" oninvalid="setCustomValidity('numbers and symbols will not work. Please REFRESH the page and try again.')">
         </div>
         <br>
-        <button type="submit" class="btn btn-white btn-animated">Submit</button>
+        <button type="submit" id="button" class="btn btn-animated">Submit</button>
       </form>
+      <br>
       <div id="output">
         <h3>This is <span id="result"></span>a Haiku!</h3>
       </div>
