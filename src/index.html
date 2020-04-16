@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haiku Checker</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haiku Checker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Is your haiku really a haiku?</h1>
+      </div>
+      <br>
+      <form id="input">
+        <div class="form-group">
+          <h3>Please enter your haiku below to see if it passes the test</h3>
+          <br>
+          <label for="inputLine1">Line One:</label>
+          <input type="text" id="inputText" pattern="[a-z' ']+" oninvalid="setCustomValidity('numbers and symbols will not work. Please REFRESH the page and try again.')">
+          <br>
+          <label for="inputLine2">Line Two:</label>
+          <input type="text" id="inputText" pattern="[a-z' ']+" oninvalid="setCustomValidity('numbers and symbols will not work. Please REFRESH the page and try again.')">
+          <br>
+          <label for="inputLine3">Line Three:</label>
+          <input type="text" id="inputText" pattern="[a-z' ']+" oninvalid="setCustomValidity('numbers and symbols will not work. Please REFRESH the page and try again.')">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-white btn-animated">Submit</button>
+      </form>
+      <div id="output">
+        <h3>This is <span id="result"></span>a Haiku!</h3>
+      </div>
+
+
+
+    </div>
+    
+  </body>
 </html>
